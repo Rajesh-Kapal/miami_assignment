@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miami Thai Spa</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#home">
+                <img src="./images/logo.jpg" width="120" alt="">
+            </a>
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#service">SERVICES</a></li>
+                <li><a href="#gallary">GALLARY</a></li>
+                <li><a href="#online">ONLINE BOOKING</a></li>
+                <li><a href="#member">MEMBERSHIP</a></li>
+                <li><a href="#footer">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <div class="side-nav">
+            <a onclick="hideNav()" id="close" class="fa fa-close"></a>
+            <a href="#home" onclick="hideNav()">HOME</a>
+            <a href="#about" onclick="hideNav()">ABOUT US</a>
+            <a href="#service" onclick="hideNav()">SERVICES</a>
+            <a href="#gallary" onclick="hideNav()">GALLARY</a>
+            <a href="#online" onclick="hideNav()">ONLINE BOOKING</a>
+            <a href="#member" onclick="hideNav()">MEMBERSHIP</a>
+            <a href="#footer" onclick="hideNav()">CONTACT US</a>
+        </div>
+        <i onclick="showNav()" class="fa-solid fa-bars" id="menu"></i>
+    </header>
+    <!-- main -->
+    <main>
+        <section class="home-section section-container" id="home">
+            <div class="home-left ">
+                <div class="decoration">
+                    <span class="deco-item"></span>
+                    <img id="home-img" src="./images/home-img.jpg" alt="">
+                </div>
+                <h2>Soothe Your Body, <br>Calm Your Mind, <br> Nourish Your Soul</h2>
+                <p>Risus scelerisque a non turpis vitae <br> malesuada sed venenatis. In fringilla <br> sollicitudin
+                    euismod sed.</p>
+                <a id="arrow_down" href="#footer" class="fa-solid fa-arrow-down"></a>
+            </div>
+            <div class="home-right ">
+                <div class="media">
+                    <i id="play" class="fa fa-play"></i>
+                </div>
+            </div>
+        </section>
+        <section class="service-section section-container" id="service">
+            <div class="service-decoration">
+                <span class="service-deco"></span>
+            </div>
+            <div class="section-text">
+                <h2 class="heading">Let Your Mind Calm</h2>
+                <p>Discover blissful relaxation with our services designed to pamper and rejuvenate. From soothing
+                    massages to refreshing facials, we've got everything you need to unwind and feel your best. Treat
+                    yourself to a little self-care and leave feeling refreshed, inside and out.</p>
+            </div>
+            <div class="services">
+
+                <div class="service">
+                    <img src="./images/service_img_1.jpg" alt="">
+                    <p class="arr">Service Name <i class="fa fa-arrow-right"></i></p>
+                </div>
+                <div class="service">
+                    <img src="./images/service_img_2.png" alt="">
+                    <p class="arr">Service Name <i class="fa fa-arrow-right"></i></p>
+                </div>
+
+                <div class="service">
+                    <img src="./images/service_img_3.jpg" alt="">
+                    <p class="arr">Service Name <i class="fa fa-arrow-right"></i></p>
+                </div>
+            </div>
+        </section>
+        <section class="about-section section-container" id="about">
+            <div class="about-decoration">
+                <span class="about-deco"></span>
+            </div>
+            <div class="about-left section-text">
+                <img src="./images/sec_img_2.jpg" alt="">
+                <p class="arr" style="font-weight: 600;">Aromatherapy Enhancement <i
+                        class="fa-solid fa-arrow-right"></i></p>
+            </div>
+            <div class="about-right section-text">
+                <h2 class="heading">About Miami Thai Spa</h2>
+                <p>Discover serenity in the heart of Miami Beach at Miami Thai Spa. Experience the transformative power
+                    of Thai massage as skilled therapists dissolve tension and promote deep relaxation. Step into our
+                    sanctuary, unwind, and rejuvenate amidst a warm and welcoming atmosphere.</p>
+                <img class="" src="./images/sec_img_3.jpg" alt="">
+                <p class="arr" style="font-weight: 600;">Authentic Thai Techniques <i
+                        class="fa-solid fa-arrow-right"></i></p>
+            </div>
+        </section>
+        <section class="gallary-section " id="gallary">
+            <div class="gallary-column">
+                <img src="./images/sec_img_7.jpg" alt="">
+                <img src="./images/lava-2.jpg" alt="">
+            </div>
+            <div class="gallary-column">
+                <img class="w-50" src="./images/sec_img_3.jpg" alt="">
+                <img class="w-50" src="./images/sec_img_4.jpg" alt="">
+                <img class="w-50" src="./images/sec_img_6.jpg" alt="">
+
+            </div>
+            <div class="gallary-column">
+                <img class="w-50" src="./images/sec_img_1.png" alt="">
+                <img class="w-50" height="100%" src="./images/lava-1.jpg" alt="">
+            </div>
+
+        </section>
+        <section class="online-section section-container" id="online">
+
+            <div class="section-text " style="max-width: 500px;">
+                <h2 class="heading">Schedule Your Wellness Journey</h2>
+                <p>Take the first step towards your well-being. Book <br> your appointment now and embark on a journey
+                    of <br> self-care and rejuvenation at our wellness center.</p>
+                <div class="btn-up">
+                    <button class="book-now">Book Now</button>
+                </div>
+            </div>
+            <div class="section-img">
+                <img src="./images/sec_img_1.png" alt="">
+                <img id="sec-img" class="w-50" src="./images/sec_img_3.jpg" alt="">
+            </div>
+
+        </section>
+        <section class="member-section section-container" id="member">
+            <div class="member-decoration">
+                <span class="member-deco"></span>
+            </div>
+            <div class="left-member">
+                <img width="400" height="400" src="./images/mem.jpg" alt="">
+            </div>
+            <div class="right-member">
+                <h2>Miami Thai Spa Opening Hours</h2>
+                <div class="member-links">
+                    <p>View all opening hours <i class="fa-solid fa-arrow-right"></i></p>
+                    <p>How to get here <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+                <div class="card-1">
+                    <h4>Opening hours</h4>
+                    <p>1 June - 20 August, 07:00 - 24:00</p>
+                    <p>21 August - 31 May, 08:00 - 22:00</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <a href="#home">
+                    <img src="./images/logo.jpg" width="500px" alt="">
+                </a>
+            </div>
+            <div class="footer-column">
+                <h2>Our Services</h2>
+                <ul class="footer-links">
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="">Thai Massage</a> </li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href=""> Swedish Massage </a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href=""> Deep Tissue Massage </a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href=""> Four Hands Massage </a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href=""> Couples Massage </a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h2>Contact Us</h2>
+                <ul class="footer-links">
+                    <li>Contact No : +90 7709572387</li>
+                    <li>Opening Timing : 10.30 AM - 10.00 PM</li>
+                    <li>Address : Nebula Park, Khadakpada Rd,</li>
+                    <li>opposite Mohan Heights, near</li>
+                    <li>Waylenagar, Beturkar Pada, Kalyan</li>
+                </ul>
+            </div>
+        </div>
+        <img src="./images/foot-img.png" id="footer-img" alt="">
+    </footer>
+
+    <script>
+        function showNav() {
+            var sidebar = document.querySelector(".side-nav");
+            sidebar.style.display = "flex";
+        }
+
+        function hideNav() {
+            var sidebar = document.querySelector(".side-nav");
+            sidebar.style.display = "none";
+
+        }
+    </script>
+</body>
+
+</html>
